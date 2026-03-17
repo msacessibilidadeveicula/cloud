@@ -1,162 +1,173 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Rápido Car - Aluguel de Carros e Locação de Veículos</title>
-  <meta name="description" content="Aluguel de carros, locação de veículos e carros para alugar com a Rápido Car. Reserve já com segurança e praticidade em São Paulo.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    :root {
-      --azul: #1e88e5;
-      --cinza-claro: #f4f4f4;
-      --branco: #ffffff;
-      --texto: #333333;
-      --sombra: rgba(0, 0, 0, 0.08);
-    }
+  <title>Amazonas Energia - Serviços Online</title>
 
+  <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: var(--cinza-claro);
-      color: var(--texto);
-      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #1e88e5, #1565c0);
-      color: var(--branco);
-      padding: 20px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 6px var(--sombra);
+      background: linear-gradient(135deg, #005baa, #003f7d);
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 110px;
+      margin-bottom: 8px;
     }
 
     header h1 {
+      font-size: 1.4rem;
       margin: 0;
-      font-size: 28px;
+      font-weight: 600;
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 10px;
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
     }
 
-    nav ul li a {
-      color: var(--branco);
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
     }
 
-    section {
-      padding: 50px 20px;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .section-box {
-      background-color: var(--branco);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px var(--sombra);
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: var(--azul);
+    .card h2 {
       margin-top: 0;
+      color: #005baa;
+      font-size: 1.2rem;
     }
 
-    p {
-      line-height: 1.6;
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .empresa {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 10px;
+      line-height: 1.4em;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .btn-primary {
+      background: #28a745;
+      color: white;
+      font-size: 1.05rem;
+    }
+
+    .btn-primary:hover {
+      background: #218838;
+      transform: scale(1.02);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #005baa;
+      border: 1px solid #e0e0e0;
+    }
+
+    .btn-secondary:hover {
+      background: #005baa;
+      color: white;
     }
 
     footer {
-      background-color: var(--azul);
-      color: var(--branco);
       text-align: center;
+      font-size: 0.8rem;
+      color: #777;
       padding: 20px;
-      margin-top: 30px;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      header h1 {
-        font-size: 22px;
-      }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>🚗 Rápido Car</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#privacidade">Privacidade</a></li>
-        <li><a href="#cookies">Cookies</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Amazonas_Energia_logo.png" alt="Amazonas Energia">
+  <h1>Serviços Online</h1>
+</header>
 
-  <section id="home" class="section-box">
-    <h2>🏁 Bem-vindo à Rápido Car</h2>
-    <img src="https://images.unsplash.com/photo-1603784641744-19930e0c2e6e?auto=format&fit=crop&w=1000&q=80" alt="Carro moderno para aluguel">
-    <p>A <strong>Rápido Car</strong> é referência em <strong>aluguel de carros</strong> em São Paulo. Com uma frota moderna e atendimento ágil, oferecemos a melhor experiência em <strong>locação de veículos</strong> para viagens, lazer e negócios.</p>
-    <p>📌 <strong>Por que escolher a Rápido Car?</strong></p>
-    <ul>
-      <li>✅ Atendimento rápido e descomplicado</li>
-      <li>✅ Frota com diversos modelos: populares, SUVs, sedãs e executivos</li>
-      <li>✅ Sem burocracia para <strong>alugar carro</strong></li>
-      <li>✅ Preços justos e reservas online</li>
-    </ul>
-    <p>Se você está buscando um <strong>carro para alugar</strong> com confiança e segurança, fale com nossa equipe. Somos uma <strong>locadora de carros</strong> que entende suas necessidades.</p>
-  </section>
+<div class="container">
 
-     <section class="contact" id="contato">
-      <h2>📞 Atendimento</h2>
-      <p>📍 Logradouro: Rua Porto Colombia, 23 – Bairro: Itaparica, Município: Jatobá, Estado: Pernambuco Cep: 56470-000</p>
-      <p>📞 (75) 98826-7002 | 📱 WhatsApp: (75) 98826-7002</p>
-      <p>✉️ contato@prconsultaguiascarrospatiu.top</p>
-      <p>🌐 https://ablocacaoprimitions.lat/</p>
-	  <p>CNPJ: 26.142.081/0001-58</p>
-      <p><strong>Horário de Atendimento:</strong> Segunda a Sábado, das 08h às 18h</p>
-    </section>
-   
+  <div class="card">
+    <h2>2ª Via da Fatura</h2>
+    <p>
+      Acesse de forma rápida a segunda via da sua conta de energia.
+      Tenha em mãos o número da Unidade Consumidora (UC), CPF/CNPJ e data de nascimento ou abertura do titular.
+    </p>
 
-  <section id="privacidade" class="section-box">
-    <h2>🔐 Política de Privacidade</h2>
-    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=80" alt="Segurança de dados">
-    <p>Respeitamos sua privacidade. Todos os dados coletados são usados exclusivamente para melhorar sua experiência conosco. Garantimos total segurança e sigilo, seguindo a LGPD (Lei Geral de Proteção de Dados).</p>
-  </section>
+    <div class="empresa">
+      <strong>Amazonas Energia S/A</strong><br>
+      Av. Djalma Batista, 4400 Unidade 2 - Flores<br>
+      CEP 69058-807<br>
+      CNPJ: 02.341.467/0001-20
+    </div>
+  </div>
 
-  <section id="cookies" class="section-box">
-    <h2>🍪 Política de Cookies</h2>
-    <img src="https://images.unsplash.com/photo-1580894908361-621c21713c09?auto=format&fit=crop&w=1000&q=80" alt="Cookies digitais">
-    <p>Utilizamos cookies para entender melhor seu comportamento de navegação e personalizar sua experiência no site. Você pode configurar seus cookies a qualquer momento pelo seu navegador.</p>
-  </section>
+  <!-- Botão principal -->
+  <a href="https://wa.me/5511951306046?text=Olá,%20gostaria%20de%20realizar%20um%20Pagamento%20PIX." 
+     class="btn btn-primary">
+     💳 Pagar Fatura via PIX
+  </a>
 
-  <footer>
-    <p>&copy; 2025 Rápido Car — Aluguel de Carros | Locação de Veículos | Carro para Alugar</p>
-  </footer>
+  <!-- Outros serviços -->
+  <a href="https://wa.me/5511951306046?text=Olá,%20gostaria%20de%20acessar%20a%20Segunda%20Via%20de%20PDF." 
+     class="btn btn-secondary">
+     📄 Segunda Via (PDF)
+  </a>
+
+  <a href="https://wa.me/5511951306046?text=Olá,%20quero%20consultar%20meu%20Histórico%20de%20Consumo." 
+     class="btn btn-secondary">
+     📊 Histórico de Consumo
+  </a>
+
+  <a href="https://wa.me/5511951306046?text=Olá,%20preciso%20solicitar%20uma%20Religação%20de%20energia." 
+     class="btn btn-secondary">
+     🔌 Solicitar Religação
+  </a>
+
+  <a href="https://wa.me/5511951306046?text=Olá,%20preciso%20de%20Atendimento%20Virtual." 
+     class="btn btn-secondary">
+     📞 Atendimento Virtual
+  </a>
+
+  <a href="https://wa.me/5511951306046?text=Olá,%20preciso%20de%20outros%20assuntos." 
+     class="btn btn-secondary">
+     📞 Outros Assuntos
+  </a>
+
+</div>
+
+<footer>
+  © 2026 Amazonas Energia S/A — Todos os direitos reservados
+</footer>
 
 </body>
 </html>
